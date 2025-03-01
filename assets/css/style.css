@@ -366,7 +366,7 @@ body .d2c_mobile_view {
 }
 .d2c_partner_wrapper .d2c_img_wrapper:hover {
     border: 1px solid var(--primary_color);
-    background: rgba(245, 124, 0, 0.02);
+    background: rgba(236, 233, 229, 0.02);
     transition: 0.4s all;
 }
 .d2c_partner_wrapper .d2c_img_wrapper img {
@@ -951,3 +951,57 @@ textarea {
     Author URL: https://www.designtocodes.com
     Text Domain: {{ Tech Start Pro }}
  */
+
+.d2c_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+  }
+
+  .d2c_grid_item {
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .d2c_grid_item:hover {
+    transform: scale(1.05);
+  }
+
+  .card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+    /* background-color: #530101; Cambia el fondo a blanco para evitar el gris */
+  }
+
+  .card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+
+  .card-img-top {
+    height: 240px;
+    object-fit: cover;
+  }
+
+  .card-body {
+    text-align: center;
+    padding: 20px;    
+    background-color: #050505dd;
+    background: var(--primary_color);
+    
+  }
+
+   /* 
+
+  .btn-primary {
+    background-color: #007bff;
+    border: none;
+    transition: background-color 0.3s;
+  }
+
+  .btn-primary:hover {
+    background-color: #0056b3;
+  } */
