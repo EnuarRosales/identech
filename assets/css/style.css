@@ -569,11 +569,11 @@ body .d2c_mobile_view {
     left: 50%;
     transform: translateX(-15%);
 }
-.d2c_grid {
+/* .d2c_grid {
     column-count: 3;
     column-gap: 0px;
     row-gap: 0px;
-}
+}*/
 .d2c_grid_item {
     border-radius: 10px;
     overflow: hidden;
@@ -581,7 +581,7 @@ body .d2c_mobile_view {
     transform: scale(1.0);
     filter: grayscale(100%);
     transition: 0.4s all;
-}
+} 
 .d2c_grid_item:hover {
     transform: scale(1.1);
     box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.23);
@@ -620,6 +620,49 @@ body .d2c_mobile_view {
 .d2c_grid_item:nth-child(6) .fancybox {
     background-image: url(../images/portfolio_six.jpg);
 }
+
+/* ESTILOS DESARROLLADO ENUAR */
+
+.d2c_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+  }
+
+  .d2c_grid_item {
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .d2c_grid_item:hover {
+    transform: scale(1.05);
+  }
+
+  .card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;    
+  }
+
+  .card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+
+  .card-img-top {
+    height: 240px;
+    object-fit: cover;
+  }
+
+  .card-body {
+    text-align: center;
+    padding: 20px;    
+    background-color: #050505dd;
+    background: var(--primary_color);    
+  }
+
 /* Portfolio Section End */
 
 .d2c_blog_bg_wrapper {
@@ -952,47 +995,7 @@ textarea {
     Text Domain: {{ Tech Start Pro }}
  */
 
-.d2c_grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 20px;
-    justify-items: center;
-  }
 
-  .d2c_grid_item {
-    transition: transform 0.3s ease-in-out;
-  }
-
-  .d2c_grid_item:hover {
-    transform: scale(1.05);
-  }
-
-  .card {
-    border: none;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    overflow: hidden;
-    transition: box-shadow 0.3s ease;
-    /* background-color: #530101; Cambia el fondo a blanco para evitar el gris */
-  }
-
-  .card:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-  }
-
-  .card-img-top {
-    height: 240px;
-    object-fit: cover;
-  }
-
-  .card-body {
-    text-align: center;
-    padding: 20px;    
-    background-color: #050505dd;
-    background: var(--primary_color);
-    
-  }
 
    /* 
 
