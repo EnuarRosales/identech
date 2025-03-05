@@ -621,7 +621,7 @@ body .d2c_mobile_view {
   transition: 0.4s all;
   height: 460px;
 }
-.d2c_grid_item:nth-child(1) .fancybox {
+/* .d2c_grid_item:nth-child(1) .fancybox {
   background-image: url(../images/portfolio_one.jpg);
 }
 .d2c_grid_item:nth-child(2) .fancybox {
@@ -638,7 +638,7 @@ body .d2c_mobile_view {
 }
 .d2c_grid_item:nth-child(6) .fancybox {
   background-image: url(../images/portfolio_six.jpg);
-}
+} */
 
 /* ESTILOS DESARROLLADO ENUAR */
 
@@ -681,10 +681,10 @@ body .d2c_mobile_view {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-.card-img-top {
+/* .card-img-top {
   height: 240px;
   object-fit: cover;
-}
+} */
 
 .card-body {
   text-align: center;
