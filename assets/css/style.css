@@ -695,7 +695,7 @@ body .d2c_mobile_view {
 
 /* sitio finca */
 
-@media (min-width: 768px) {
+@media (min-width: 1768px) {
   .listado-categorias {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
