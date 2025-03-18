@@ -693,16 +693,40 @@ body .d2c_mobile_view {
 }
 
 /* sitio finca */
+.listado-categorias {
+  display: grid;
+  gap: 1rem; /* Espaciado entre elementos */
+}
 
+/* Para pantallas grandes (1768px en adelante) */
 @media (min-width: 1768px) {
   .listado-categorias {
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 0rem;
-    /* gap: 0rem; */
+    grid-template-rows: auto;
   }
 }
+
+/* Para tablets grandes (iPad en modo horizontal, ~1024px) */
+@media (min-width: 1024px) and (max-width: 1767px) {
+  .listado-categorias {
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas en lugar de 3 */
+  }
+}
+
+/* Para tablets pequeñas (iPad en modo vertical, ~768px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .listado-categorias {
+    grid-template-columns: repeat(1, 1fr); /* 1 columna para mejor legibilidad */
+  }
+}
+
+/* Para móviles (menos de 768px) */
+@media (max-width: 767px) {
+  .listado-categorias {
+    grid-template-columns: repeat(1, 1fr); /* Se mantiene en una columna */
+  }
+}
+
 
 .contenedor {
   max-width: 140rem;
