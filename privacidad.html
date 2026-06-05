@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidad — IDEN Technology</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+         :root {
+            --ink: #0f1923;
+            --ink-soft: #3a4a5c;
+            --ink-muted: #7a8fa6;
+            --paper: #f8f6f1;
+            --paper-warm: #ede9e0;
+            --accent: #1a4fd6;
+            --accent-light: #dce8ff;
+            --rule: #d4cfc6;
+            --serif: 'DM Serif Display', Georgia, serif;
+            --sans: 'DM Sans', system-ui, sans-serif;
+        }
+        
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: var(--sans);
+            background: var(--paper);
+            color: var(--ink);
+            line-height: 1.75;
+            font-size: 16px;
+        }
+        /* Header */
+        
+        header {
+            background: var(--ink);
+            color: #fff;
+            padding: 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 3px solid var(--accent);
+        }
+        
+        .header-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 18px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .logo {
+            font-family: var(--serif);
+            font-size: 1.4rem;
+            letter-spacing: -0.02em;
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        .logo span {
+            color: #5b8fff;
+        }
+        
+        .header-badge {
+            font-size: 0.72rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #5b8fff;
+            border: 1px solid #2a3f6e;
+            padding: 4px 12px;
+            border-radius: 20px;
+        }
+        /* Hero */
+        
+        .hero {
+            background: var(--ink);
+            color: #fff;
+            padding: 80px 40px 60px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -60px;
+            right: -60px;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(90, 143, 255, 0.12) 0%, transparent 70%);
+            pointer-events: none;
+        }
+        
+        .hero-inner {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+        }
+        
+        .hero-tag {
+            display: inline-block;
+            font-size: 0.72rem;
+            font-weight: 600;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: #5b8fff;
+            margin-bottom: 20px;
+        }
+        
+        .hero h1 {
+            font-family: var(--serif);
+            font-size: clamp(2rem, 5vw, 3.2rem);
+            font-weight: 400;
+            line-height: 1.15;
+            margin-bottom: 20px;
+            letter-spacing: -0.02em;
+        }
+        
+        .hero p {
+            font-size: 1.05rem;
+            color: #8da8cc;
+            max-width: 560px;
+            line-height: 1.7;
+        }
+        
+        .hero-meta {
+            margin-top: 32px;
+            display: flex;
+            gap: 32px;
+            flex-wrap: wrap;
+        }
+        
+        .meta-item {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+        
+        .meta-label {
+            font-size: 0.68rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #4a6080;
+            font-weight: 600;
+        }
+        
+        .meta-value {
+            font-size: 0.88rem;
+            color: #9cb8d4;
+        }
+        /* Layout */
+        
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+        
+        .content-wrapper {
+            display: grid;
+            grid-template-columns: 240px 1fr;
+            gap: 64px;
+            padding: 64px 0;
+            align-items: start;
+        }
+        /* Sidebar nav */
+        
+        .sidebar {
+            position: sticky;
+            top: 80px;
+        }
+        
+        .sidebar-title {
+            font-size: 0.68rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--ink-muted);
+            font-weight: 600;
+            margin-bottom: 16px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid var(--rule);
+        }
+        
+        .sidebar nav {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+        
+        .sidebar nav a {
+            font-size: 0.85rem;
+            color: var(--ink-soft);
+            text-decoration: none;
+            padding: 6px 12px;
+            border-radius: 6px;
+            border-left: 2px solid transparent;
+            transition: all 0.2s;
+            line-height: 1.4;
+        }
+        
+        .sidebar nav a:hover {
+            background: var(--paper-warm);
+            color: var(--accent);
+            border-left-color: var(--accent);
+        }
+        /* Article */
+        
+        article {
+            min-width: 0;
+        }
+        
+        .section {
+            margin-bottom: 56px;
+            padding-bottom: 56px;
+            border-bottom: 1px solid var(--rule);
+        }
+        
+        .section:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+        
+        .section-number {
+            font-size: 0.68rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--accent);
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        
+        .section h2 {
+            font-family: var(--serif);
+            font-size: 1.65rem;
+            font-weight: 400;
+            color: var(--ink);
+            margin-bottom: 20px;
+            line-height: 1.25;
+            letter-spacing: -0.01em;
+        }
+        
+        .section p {
+            color: var(--ink-soft);
+            margin-bottom: 16px;
+            font-size: 0.97rem;
+        }
+        
+        .section p:last-child {
+            margin-bottom: 0;
+        }
+        /* Data table */
+        
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 24px 0;
+            font-size: 0.88rem;
+        }
+        
+        .data-table th {
+            text-align: left;
+            font-size: 0.7rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--ink-muted);
+            font-weight: 600;
+            padding: 10px 16px;
+            background: var(--paper-warm);
+            border-bottom: 1px solid var(--rule);
+        }
+        
+        .data-table td {
+            padding: 12px 16px;
+            color: var(--ink-soft);
+            border-bottom: 1px solid var(--rule);
+            vertical-align: top;
+        }
+        
+        .data-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .data-table td:first-child {
+            font-weight: 500;
+            color: var(--ink);
+            white-space: nowrap;
+        }
+        /* Lists */
+        
+        .styled-list {
+            list-style: none;
+            margin: 16px 0;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        .styled-list li {
+            display: flex;
+            gap: 12px;
+            align-items: flex-start;
+            font-size: 0.95rem;
+            color: var(--ink-soft);
+        }
+        
+        .styled-list li::before {
+            content: '';
+            flex-shrink: 0;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--accent);
+            margin-top: 8px;
+        }
+        /* Highlight box */
+        
+        .highlight-box {
+            background: var(--accent-light);
+            border-left: 3px solid var(--accent);
+            border-radius: 0 8px 8px 0;
+            padding: 20px 24px;
+            margin: 24px 0;
+        }
+        
+        .highlight-box p {
+            color: #1a3a6e !important;
+            font-size: 0.93rem !important;
+            margin: 0 !important;
+        }
+        
+        .highlight-box strong {
+            color: var(--accent);
+        }
+        /* Warning box */
+        
+        .warning-box {
+            background: #fff8e1;
+            border-left: 3px solid #f59e0b;
+            border-radius: 0 8px 8px 0;
+            padding: 20px 24px;
+            margin: 24px 0;
+        }
+        
+        .warning-box p {
+            color: #78450a !important;
+            font-size: 0.93rem !important;
+            margin: 0 !important;
+        }
+        /* Contact card */
+        
+        .contact-card {
+            background: var(--ink);
+            color: #fff;
+            border-radius: 12px;
+            padding: 32px;
+            margin-top: 24px;
+        }
+        
+        .contact-card h3 {
+            font-family: var(--serif);
+            font-size: 1.2rem;
+            font-weight: 400;
+            margin-bottom: 16px;
+            color: #fff;
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+        
+        .contact-item {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+        
+        .contact-item .label {
+            font-size: 0.68rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #4a6080;
+            font-weight: 600;
+        }
+        
+        .contact-item .value {
+            font-size: 0.9rem;
+            color: #9cb8d4;
+        }
+        
+        .contact-item a {
+            color: #5b8fff;
+            text-decoration: none;
+        }
+        /* Footer */
+        
+        footer {
+            background: var(--paper-warm);
+            border-top: 1px solid var(--rule);
+            padding: 40px;
+            margin-top: 0;
+        }
+        
+        .footer-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+        
+        .footer-copy {
+            font-size: 0.82rem;
+            color: var(--ink-muted);
+        }
+        
+        .footer-links {
+            display: flex;
+            gap: 24px;
+        }
+        
+        .footer-links a {
+            font-size: 0.82rem;
+            color: var(--ink-muted);
+            text-decoration: none;
+        }
+        
+        .footer-links a:hover {
+            color: var(--accent);
+        }
+        /* Responsive */
+        
+        @media (max-width: 768px) {
+            .header-inner {
+                padding: 16px 20px;
+            }
+            .hero {
+                padding: 48px 20px 40px;
+            }
+            .container {
+                padding: 0 20px;
+            }
+            .content-wrapper {
+                grid-template-columns: 1fr;
+                gap: 40px;
+                padding: 40px 0;
+            }
+            .sidebar {
+                position: static;
+            }
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+            .hero-meta {
+                gap: 20px;
+            }
+            footer {
+                padding: 32px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-inner">
+            <a href="#" class="logo">agen <span>IA</span></a>
+            <span class="header-badge">Política de Privacidad</span>
+        </div>
+    </header>
+
+    <div class="hero">
+        <div class="hero-inner">
+            <span class="hero-tag">Documento legal</span>
+            <h1>Política de Privacidad y<br>Tratamiento de Datos</h1>
+            <p>En agencIA nos comprometemos a proteger la privacidad de los usuarios que interactúan con nuestros servicios de automatización e inteligencia artificial a través de WhatsApp y otros canales digitales.</p>
+            <div class="hero-meta">
+                <div class="meta-item">
+                    <span class="meta-label">Última actualización</span>
+                    <span class="meta-value">Junio 2026</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Versión</span>
+                    <span class="meta-value">1.0</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Jurisdicción</span>
+                    <span class="meta-value">República de Colombia</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Cumplimiento</span>
+                    <span class="meta-value">Ley 1581/2012 · Meta WhatsApp Business</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="content-wrapper">
+
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <p class="sidebar-title">Contenido</p>
+                <nav>
+                    <a href="#responsable">1. Responsable del tratamiento</a>
+                    <a href="#datos">2. Datos que recopilamos</a>
+                    <a href="#finalidad">3. Finalidad del tratamiento</a>
+                    <a href="#whatsapp">4. Uso de WhatsApp Business</a>
+                    <a href="#ia">5. Agente de inteligencia artificial</a>
+                    <a href="#base-legal">6. Base legal</a>
+                    <a href="#conservacion">7. Conservación de datos</a>
+                    <a href="#terceros">8. Compartición con terceros</a>
+                    <a href="#derechos">9. Derechos del titular</a>
+                    <a href="#seguridad">10. Seguridad</a>
+                    <a href="#menores">11. Menores de edad</a>
+                    <a href="#cambios">12. Cambios a esta política</a>
+                    <a href="#contacto">13. Contacto</a>
+                </nav>
+            </aside>
+
+            <!-- Content -->
+            <article>
+
+                <div class="section" id="responsable">
+                    <p class="section-number">Sección 01</p>
+                    <h2>Responsable del tratamiento</h2>
+                    <p>El responsable del tratamiento de los datos personales recopilados a través de nuestros servicios es:</p>
+                    <table class="data-table">
+                        <tr>
+                            <td>Razón social</td>
+                            <td>agencIA</td>
+                        </tr>
+                        <tr>
+                            <td>Dominio web</td>
+                            <td>agencIA </td>
+                        </tr>
+                        <tr>
+                            <td>País</td>
+                            <td>Colombia</td>
+                        </tr>
+                        <tr>
+                            <td>Correo de privacidad</td>
+                            <td>privacidad@agencIA</td>
+                        </tr>
+                        <tr>
+                            <td>Marco legal</td>
+                            <td>Ley 1581 de 2012 y Decreto 1377 de 2013 (Colombia)</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="section" id="datos">
+                    <p class="section-number">Sección 02</p>
+                    <h2>Datos personales que recopilamos</h2>
+                    <p>Cuando un usuario interactúa con nuestros servicios a través de WhatsApp u otros canales digitales, podemos recopilar los siguientes datos:</p>
+
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Dato</th>
+                                <th>Origen</th>
+                                <th>Obligatoriedad</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Nombre completo</td>
+                                <td>Proporcionado por el usuario</td>
+                                <td>Opcional</td>
+                            </tr>
+                            <tr>
+                                <td>Número de teléfono (WhatsApp)</td>
+                                <td>Automático al iniciar conversación</td>
+                                <td>Necesario</td>
+                            </tr>
+                            <tr>
+                                <td>Correo electrónico</td>
+                                <td>Proporcionado por el usuario</td>
+                                <td>Opcional</td>
+                            </tr>
+                            <tr>
+                                <td>Servicio de interés</td>
+                                <td>Conversación con el agente IA</td>
+                                <td>Opcional</td>
+                            </tr>
+                            <tr>
+                                <td>Fecha y hora de mensajes</td>
+                                <td>Automático</td>
+                                <td>Técnico</td>
+                            </tr>
+                            <tr>
+                                <td>Contenido de los mensajes</td>
+                                <td>Conversación</td>
+                                <td>Necesario para el servicio</td>
+                            </tr>
+                            <tr>
+                                <td>Información de citas agendadas</td>
+                                <td>Proporcionada durante la conversación</td>
+                                <td>Necesario para el servicio</td>
+                            </tr>
+                            <tr>
+                                <td>Canal de comunicación</td>
+                                <td>Automático</td>
+                                <td>Técnico</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="highlight-box">
+                        <p><strong>Nota importante:</strong> No recopilamos datos sensibles como información financiera, datos de salud, origen racial o étnico, orientación sexual ni afiliaciones políticas o religiosas.</p>
+                    </div>
+                </div>
+
+                <div class="section" id="finalidad">
+                    <p class="section-number">Sección 03</p>
+                    <h2>Finalidad del tratamiento</h2>
+                    <p>Los datos personales recopilados serán utilizados exclusivamente para las siguientes finalidades:</p>
+                    <ul class="styled-list">
+                        <li>Gestionar y responder consultas realizadas a través de WhatsApp u otros canales digitales</li>
+                        <li>Agendar, confirmar, modificar o cancelar citas y servicios solicitados</li>
+                        <li>Enviar recordatorios y confirmaciones relacionados con servicios contratados</li>
+                        <li>Mejorar la calidad de las respuestas del agente de inteligencia artificial</li>
+                        <li>Registrar el historial de conversaciones para dar continuidad al servicio</li>
+                        <li>Cumplir con obligaciones legales y regulatorias aplicables</li>
+                        <li>Enviar información relevante sobre los servicios solicitados (no publicidad no solicitada)</li>
+                    </ul>
+                    <div class="warning-box">
+                        <p><strong>No utilizamos sus datos</strong> para venta a terceros, publicidad de terceros, perfilamiento comercial no relacionado con el servicio solicitado, ni para ninguna finalidad distinta a las indicadas en esta política.</p>
+                    </div>
+                </div>
+
+                <div class="section" id="whatsapp">
+                    <p class="section-number">Sección 04</p>
+                    <h2>Uso de WhatsApp Business API</h2>
+                    <p>agencIA utiliza la API oficial de WhatsApp Business proporcionada por Meta Platforms, Inc. para gestionar las comunicaciones con usuarios. Al iniciar una conversación a través de WhatsApp, usted acepta también las condiciones de uso
+                        y política de privacidad de Meta/WhatsApp.</p>
+
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Aspecto</th>
+                                <th>Detalle</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Proveedor</td>
+                                <td>Meta Platforms, Inc. (WhatsApp Business API)</td>
+                            </tr>
+                            <tr>
+                                <td>Tipo de mensajes</td>
+                                <td>Mensajes de sesión iniciados por el usuario y mensajes de plantilla aprobados por Meta</td>
+                            </tr>
+                            <tr>
+                                <td>Cifrado</td>
+                                <td>Extremo a extremo según política de WhatsApp</td>
+                            </tr>
+                            <tr>
+                                <td>Opt-in</td>
+                                <td>El usuario inicia la conversación voluntariamente</td>
+                            </tr>
+                            <tr>
+                                <td>Opt-out</td>
+                                <td>El usuario puede escribir "STOP" o "No deseo más mensajes" en cualquier momento</td>
+                            </tr>
+                            <tr>
+                                <td>Política de Meta</td>
+                                <td>https://www.whatsapp.com/legal/privacy-policy</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="highlight-box">
+                        <p><strong>Consentimiento:</strong> Al enviar un mensaje a nuestro número de WhatsApp Business, usted otorga su consentimiento expreso para recibir respuestas automatizadas y de agentes humanos relacionadas con el servicio solicitado.</p>
+                    </div>
+
+                    <p>Los mensajes enviados a través de WhatsApp solo serán utilizados para responder a las consultas del usuario y gestionar los servicios solicitados. No enviaremos mensajes promocionales no solicitados ni compartiremos su número de teléfono
+                        con terceros con fines publicitarios.</p>
+                </div>
+
+                <div class="section" id="ia">
+                    <p class="section-number">Sección 05</p>
+                    <h2>Agente de inteligencia artificial</h2>
+                    <p>agencIA utiliza tecnología de inteligencia artificial para automatizar respuestas y gestionar conversaciones. Es importante que el usuario conozca cómo funciona este sistema:</p>
+
+                    <ul class="styled-list">
+                        <li><strong>Automatización:</strong> Las respuestas iniciales pueden ser generadas por un agente de IA basado en modelos de lenguaje de OpenAI (GPT). El usuario puede solicitar atención humana en cualquier momento.</li>
+                        <li><strong>Procesamiento de conversaciones:</strong> El contenido de los mensajes es procesado por los sistemas de IA para generar respuestas apropiadas. Este procesamiento se realiza en servidores seguros.</li>
+                        <li><strong>Memoria de conversación:</strong> El agente mantiene contexto de la conversación durante la sesión activa para brindar una experiencia coherente.</li>
+                        <li><strong>Google Calendar:</strong> Cuando se agenda una cita, los datos necesarios (nombre, fecha, servicio) son enviados a Google Calendar para crear el evento. Aplica la política de privacidad de Google.</li>
+                        <li><strong>No toma de decisiones automatizadas con consecuencias legales:</strong> El sistema de IA no toma decisiones automáticas que tengan efectos legales significativos sobre los usuarios.</li>
+                    </ul>
+
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Proveedor tecnológico</th>
+                                <th>Uso</th>
+                                <th>Política de privacidad</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>OpenAI</td>
+                                <td>Generación de respuestas del agente IA</td>
+                                <td>openai.com/policies/privacy-policy</td>
+                            </tr>
+                            <tr>
+                                <td>Google Calendar API</td>
+                                <td>Gestión de citas y eventos</td>
+                                <td>policies.google.com/privacy</td>
+                            </tr>
+                            <tr>
+                                <td>Chatwoot (self-hosted)</td>
+                                <td>Plataforma de gestión de conversaciones</td>
+                                <td>Alojado en servidores propios</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="section" id="base-legal">
+                    <p class="section-number">Sección 06</p>
+                    <h2>Base legal del tratamiento</h2>
+                    <p>El tratamiento de datos personales se realiza bajo las siguientes bases legales contempladas en la Ley 1581 de 2012 de Colombia:</p>
+                    <ul class="styled-list">
+                        <li><strong>Consentimiento del titular:</strong> El usuario inicia voluntariamente la conversación y proporciona sus datos para obtener el servicio solicitado.</li>
+                        <li><strong>Ejecución de una relación contractual:</strong> El tratamiento es necesario para prestar el servicio de agendamiento, consultas y atención solicitado por el usuario.</li>
+                        <li><strong>Cumplimiento de obligaciones legales:</strong> En los casos en que la ley así lo exija.</li>
+                        <li><strong>Interés legítimo:</strong> Para mejorar la calidad del servicio y garantizar la seguridad de las comunicaciones.</li>
+                    </ul>
+                </div>
+
+                <div class="section" id="conservacion">
+                    <p class="section-number">Sección 07</p>
+                    <h2>Conservación de datos</h2>
+                    <p>Los datos personales serán conservados durante los períodos indicados a continuación:</p>
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Tipo de dato</th>
+                                <th>Período de conservación</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Historial de conversaciones</td>
+                                <td>12 meses desde la última interacción</td>
+                            </tr>
+                            <tr>
+                                <td>Datos de contacto (nombre, teléfono)</td>
+                                <td>Mientras exista relación de servicio activa + 2 años</td>
+                            </tr>
+                            <tr>
+                                <td>Registros de citas</td>
+                                <td>2 años desde la fecha de la cita</td>
+                            </tr>
+                            <tr>
+                                <td>Datos de facturación</td>
+                                <td>5 años (obligación legal contable)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>Transcurridos estos períodos, los datos serán eliminados de forma segura o anonimizados de manera que no permitan la identificación del titular.</p>
+                </div>
+
+                <div class="section" id="terceros">
+                    <p class="section-number">Sección 08</p>
+                    <h2>Compartición con terceros</h2>
+                    <p>agencIA <strong>no vende, arrienda ni comercializa</strong> los datos personales de sus usuarios. Los datos únicamente podrán ser compartidos en los siguientes casos:</p>
+                    <ul class="styled-list">
+                        <li><strong>Proveedores tecnológicos:</strong> OpenAI y Google para la prestación del servicio (ver sección 5), bajo acuerdos de confidencialidad y tratamiento de datos.</li>
+                        <li><strong>Requerimientos legales:</strong> Cuando una autoridad competente lo exija mediante orden judicial o administrativa.</li>
+                        <li><strong>Protección de derechos:</strong> Cuando sea necesario para proteger los derechos, propiedad o seguridad de agencIA , sus usuarios o terceros.</li>
+                        <li><strong>Fusiones o adquisiciones:</strong> En caso de reorganización empresarial, los datos serán transferidos bajo las mismas condiciones de esta política.</li>
+                    </ul>
+                </div>
+
+                <div class="section" id="derechos">
+                    <p class="section-number">Sección 09</p>
+                    <h2>Derechos del titular de los datos</h2>
+                    <p>De conformidad con la Ley 1581 de 2012 de Colombia, los titulares de datos personales tienen los siguientes derechos:</p>
+                    <ul class="styled-list">
+                        <li><strong>Acceso:</strong> Conocer los datos personales que tenemos sobre usted y cómo los tratamos.</li>
+                        <li><strong>Rectificación:</strong> Solicitar la corrección de datos inexactos, incompletos o desactualizados.</li>
+                        <li><strong>Supresión:</strong> Solicitar la eliminación de sus datos cuando no sean necesarios para las finalidades del tratamiento.</li>
+                        <li><strong>Oposición:</strong> Oponerse al tratamiento de sus datos para finalidades específicas.</li>
+                        <li><strong>Portabilidad:</strong> Recibir sus datos en un formato estructurado y de uso común.</li>
+                        <li><strong>Revocación del consentimiento:</strong> Revocar el consentimiento otorgado en cualquier momento.</li>
+                    </ul>
+
+                    <div class="highlight-box">
+                        <p>Para ejercer cualquiera de estos derechos, envíe una solicitud a <strong>privacidad@agencIA </strong> indicando su nombre, número de teléfono asociado y el derecho que desea ejercer. Responderemos en un plazo máximo de
+                            <strong>15 días hábiles</strong>.</p>
+                    </div>
+
+                    <p>También puede escribir <strong>"STOP"</strong> o <strong>"No deseo más mensajes"</strong> en nuestra conversación de WhatsApp para dejar de recibir comunicaciones automatizadas de inmediato.</p>
+                </div>
+
+                <div class="section" id="seguridad">
+                    <p class="section-number">Sección 10</p>
+                    <h2>Medidas de seguridad</h2>
+                    <p>agencIA implementa medidas técnicas y organizativas para proteger los datos personales contra acceso no autorizado, pérdida, alteración o divulgación:</p>
+                    <ul class="styled-list">
+                        <li>Cifrado HTTPS/TLS en todas las comunicaciones entre sistemas</li>
+                        <li>Servidores alojados en infraestructura segura con acceso restringido</li>
+                        <li>Control de acceso basado en roles para el personal interno</li>
+                        <li>Copias de seguridad periódicas de los datos</li>
+                        <li>Monitoreo de accesos y detección de actividades sospechosas</li>
+                        <li>Capacitación del personal en protección de datos personales</li>
+                    </ul>
+                    <p>En caso de una brecha de seguridad que afecte sus datos, le notificaremos en los plazos establecidos por la normativa colombiana aplicable.</p>
+                </div>
+
+                <div class="section" id="menores">
+                    <p class="section-number">Sección 11</p>
+                    <h2>Menores de edad</h2>
+                    <p>Nuestros servicios están dirigidos a personas mayores de 18 años. No recopilamos intencionalmente datos de menores de edad. Si tiene conocimiento de que un menor ha proporcionado datos personales a través de nuestros servicios, por
+                        favor contáctenos para eliminar dicha información.</p>
+                    <div class="warning-box">
+                        <p>Si usted es menor de 18 años, no proporcione sus datos personales a través de nuestros canales de comunicación sin el consentimiento de sus padres o tutores legales.</p>
+                    </div>
+                </div>
+
+                <div class="section" id="cambios">
+                    <p class="section-number">Sección 12</p>
+                    <h2>Cambios a esta política</h2>
+                    <p>agencIA se reserva el derecho de modificar esta Política de Privacidad en cualquier momento. Los cambios entrarán en vigor inmediatamente después de su publicación en este sitio web.</p>
+                    <p>Cuando realicemos cambios sustanciales, notificaremos a los usuarios a través de un mensaje en WhatsApp o por correo electrónico, si disponemos de dicho dato. La fecha de "última actualización" al inicio de este documento refleja cuándo
+                        se realizó la revisión más reciente.</p>
+                    <p>El uso continuado de nuestros servicios tras la publicación de cambios constituye la aceptación de la nueva versión de esta política.</p>
+                </div>
+
+                <div class="section" id="contacto">
+                    <p class="section-number">Sección 13</p>
+                    <h2>Contacto y reclamaciones</h2>
+                    <p>Para cualquier consulta, solicitud o reclamación relacionada con el tratamiento de sus datos personales, puede contactarnos a través de los siguientes medios:</p>
+
+                    <div class="contact-card">
+                        <h3>Oficial de Protección de Datos — agencIA </h3>
+                        <div class="contact-grid">
+                            <div class="contact-item">
+                                <span class="label">Correo electrónico</span>
+                                <span class="value"><a href="mailto:privacidad@agencIA ">privacidad@agencIA </a></span>
+                            </div>
+                            <div class="contact-item">
+                                <span class="label">Sitio web</span>
+                                <span class="value"><a href="https://identechnology.co">agencIA </a></span>
+                            </div>
+                            <div class="contact-item">
+                                <span class="label">País</span>
+                                <span class="value">Colombia</span>
+                            </div>
+                            <div class="contact-item">
+                                <span class="label">Tiempo de respuesta</span>
+                                <span class="value">15 días hábiles</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p style="margin-top: 24px;">Si considera que su solicitud no ha sido atendida satisfactoriamente, puede presentar una reclamación ante la <strong>Superintendencia de Industria y Comercio (SIC)</strong> de Colombia, entidad encargada de velar por el cumplimiento
+                        de la normativa de protección de datos personales.</p>
+                    <p>Sitio web de la SIC: <a href="https://www.sic.gov.co" style="color: var(--accent);">www.sic.gov.co</a></p>
+                </div>
+
+            </article>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-inner">
+            <p class="footer-copy">© 2026 agencIA · Todos los derechos reservados · Colombia</p>
+            <div class="footer-links">
+                <a href="mailto:privacidad@identechnology.co">Contacto de privacidad</a>
+                <a href="https://identechnology.co">agencIA </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
